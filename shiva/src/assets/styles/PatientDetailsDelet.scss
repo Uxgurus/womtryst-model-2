@@ -9,19 +9,19 @@
     position: absolute;right: 20px;
 }
 .PatientDetailsDelet{
-    // display: none;
+    
      width: 270px;height: 285px;background-color: #ffffff;
-    //  position: relative;
-    // top: 45px;left: 705px;
-    // &__upArrow{
-    //     border: solid #f95151;border-width: 0px 10px 10px 0; padding: 4px;-ms-transform: rotate(-135deg);
-    //     transform: rotate(-135deg);-webkit-transform: rotate(-135deg);position: absolute;right: 28px;bottom: 275px;
-    // }
+    &__upArrow{
+        border: solid #f95151;border-width: 0px 10px 10px 0; padding: 4px;-ms-transform: rotate(-135deg);
+        transform: rotate(-135deg);-webkit-transform: rotate(-135deg);position: absolute;left: 225px;bottom: 275px;
+    }
     &__Header{
         width: 270px;height: 50px;background-color: #f95151;
     }
     &__Heading{
-        @extend .Link__Properties;color: #ffffff; top: 20px;left: 65px;
+        color: #ffffff;  
+        font-family: $fontFamily--robotoMedium;font-size: 13px;
+        padding: 25px 0px 0px 25px;
     }
     &__Content{
         position: relative;

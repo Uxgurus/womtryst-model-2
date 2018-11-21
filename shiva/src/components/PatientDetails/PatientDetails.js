@@ -14,7 +14,7 @@ import HealthCondition from '../PatientDetails/PatientReports/HealthCondition';
 import Consultation from '../PatientDetails/PatientReports/Consultation';
 import Investigation from '../PatientDetails/PatientReports/Investigation';
 import Immunization from '../PatientDetails/PatientReports/Immunization';
-import AddPatientDetails from './AddPatientDetails/AddPatientDetails';
+    import AddPatientDetails from './AddPatientDetails/AddPatientDetails';
 import Popup from 'reactjs-popup'
 
 class PatientDetails extends Component {
@@ -48,16 +48,19 @@ class PatientDetails extends Component {
         {ActiveDeleteSrc: ActiveDeleteIcon},
         {ActiveDeletAlt: 'Delete Image'}
     ], 
-    showPopup: false
+    showPopup: false,
+    showPopup0: true
   }
   AddMedicalPopUp = () =>{
     this.setState({ 
-        showPopup: true
+        showPopup: true,
+        showPopup0: false
     });
 }   
 HideAddMedicalDetails = () => {
     this.setState({ 
-        showPopup: false
+        showPopup: false,
+        showPopup0: true
     });
 }
   render() {
@@ -77,35 +80,35 @@ HideAddMedicalDetails = () => {
                         CallerImgTitle= {this.state.PatientDetailsProfile[4].CallerImgTitle}
                         CallerImg= {this.state.PatientDetailsProfile[5].CallerImg} >
                     </PatientDetailsProfile> 
-                    <PatientMedical Heading={this.state.Heading} MedicalRequest= '- Request'
-                    show= {this.state.show}>
+                    <PatientMedical Heading={this.state.Heading} MedicalRequest= '- Request'show= {this.state.show}>
+                   
                     <Popup  trigger={ <a className= 'Pregnancy__MoreInformation' onClick= {this.ShowDeletePopUp}
                             href= {this.state.PatientMedicalPregnancy[0].MedicalInformationHreef} 
                             title= {this.state.PatientMedicalPregnancy[1].MoreMedicalInformationTitle}>
                             {this.state.PatientMedicalPregnancy[2].MoreMedicalInformation}
                         </a>}
                          contentStyle={{
-                                        width: '270px',
-                                        height: '285px',
                                         backgroundColor:'#ffffff',
                                         padding:'0px',
-                                        margin: '0px 28px',
+                                        margin: '3px -223px',
                                         border:'none'
                                         }}
                                         arrowStyle={{
-                                                        left:'232px',
-                                                        background: '#f95151',
+                                                         display: 'none'
                                                         }}
-                            position='bottom right'
+                            position='bottom left'
                             left= '840px'
                         >
+                         {this.state.showPopup0 ?
                         <PatientDetailDelete EnableDeleteSrc= {this.state.PatientDetailDelete[0].EnableDeleteSrc} 
                         EnableDeletAlt= {this.state.PatientDetailDelete[1].EnableDeletAlt}
                         ActiveDeleteSrc= {this.state.PatientDetailDelete[2].ActiveDeleteSrc}
                         ActiveDeletAlt= {this.state.PatientDetailDelete[3].ActiveDeletAlt}
                         AddMedicalPopUp1= {this.AddMedicalPopUp}></PatientDetailDelete>
-      
+                        : null
+                     }
                         </Popup>
+                        
                        
                         <div className= 'Pregnancy__MedicalInformatioNDiv'>
                                 <ul className= 'Pregnancy__UnOrderList' >
