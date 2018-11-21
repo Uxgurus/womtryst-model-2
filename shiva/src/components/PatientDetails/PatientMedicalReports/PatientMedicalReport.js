@@ -3,6 +3,12 @@ import '../../../assets/styles/PatientMedicalReport.scss';
 import $ from 'jquery';
 
  class PatientMedicalReports extends Component{
+    HealthConditionEnter = () => {  
+        $('.HealthCondition').show();
+    }
+    HealthConditionLeavu = () => {  
+        $('.HealthCondition').hide();
+    }
     ScanEnter = () => {
         $(".Scans").show(); 
         // $('.Immunization').hide();
@@ -12,10 +18,6 @@ import $ from 'jquery';
     }
     ScanDivLeavu = () => {
         $(".Scans").hide(); 
-    }
-   
-    HealthConditionLeavu = () => {  
-        $('.HealthCondition').hide();
     }
     ConsultationEnter = () => {
         $('.Consultation').show();
@@ -52,7 +54,8 @@ import $ from 'jquery';
                 <div className= 'PatientMedicalReports'>
                     <ul className= 'PatientMedicalReports__Unorder'>  
                         <li className= 'PatientMedicalReports__ListIteam'>
-                            <a className= 'PatientMedicalReports__Healthondition' onMouseEnter={this.props.HealthConditionEnter} 
+                            <a className= 'PatientMedicalReports__Healthondition' 
+                            onMouseEnter={this.HealthConditionEnter} 
                             onMouseLeave= {this.HealthConditionLeavu}
                             href= '#Healthondition' title= 'Health Condition'>Health Condition</a>
                             

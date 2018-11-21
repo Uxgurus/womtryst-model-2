@@ -60,9 +60,7 @@
     }
 }
     .HealthCondition{
-        width: 974px;  
-    margin-left: 136px; 
-    overflow: hidden; 
+        @extend .Scans;
     }
     .Consultation{
         @extend .Scans;

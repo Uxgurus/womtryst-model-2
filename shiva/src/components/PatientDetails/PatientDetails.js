@@ -48,21 +48,23 @@ class PatientDetails extends Component {
         {ActiveDeleteSrc: ActiveDeleteIcon},
         {ActiveDeletAlt: 'Delete Image'}
     ], 
-    showPopup: false,
-    showPopup0: true
+    AddshowPopup: false,
+    DeletshowPopup: true
   }
   AddMedicalPopUp = () =>{
     this.setState({ 
-        showPopup: true,
-        showPopup0: false
+        AddshowPopup: true,
+        DeletshowPopup: false
     });
 }   
 HideAddMedicalDetails = () => {
-    this.setState({ 
-        showPopup: false,
-        showPopup0: true
-    });
-}
+        this.setState({ 
+            AddshowPopup: false,
+            DeletshowPopup: true
+        });
+} 
+    
+ 
   render() {
     return (
       <div className="PatientDetails" onClick= {this.HidePopup}>
@@ -99,7 +101,7 @@ HideAddMedicalDetails = () => {
                             position='bottom left'
                             left= '840px'
                         >
-                         {this.state.showPopup0 ?
+                         {this.state.DeletshowPopup ?
                         <PatientDetailDelete EnableDeleteSrc= {this.state.PatientDetailDelete[0].EnableDeleteSrc} 
                         EnableDeletAlt= {this.state.PatientDetailDelete[1].EnableDeletAlt}
                         ActiveDeleteSrc= {this.state.PatientDetailDelete[2].ActiveDeleteSrc}
@@ -172,15 +174,14 @@ HideAddMedicalDetails = () => {
                         </div>
                     </PatientMedical>
                     <PatientMedicalReport HealthConditionEnter= {this.HealthConditionEnter} />
-                    {this.state.showPopup ? 
+                    {this.state.AddshowPopup ? 
                 <AddPatientDetails HideAddMedicalDetails= {this.HideAddMedicalDetails}/>
                 
               : null
                      }
               </div> 
-              
-                <Scans /> 
-                <HealthCondition /> 
+              <HealthCondition /> 
+              <Scans /> 
                 <Consultation ></Consultation>
                 <Investigation ></Investigation>
                 <Immunization /> 
