@@ -1,0 +1,63 @@
+.banner__sub{
+    float: left;
+    /* height:150px ; */
+    width:170px;
+}
+.banner__bottom{
+    position: absolute;
+    top: 299px;
+}
+.banner__nameright{
+    width: 234px;
+    height: 40px;
+    background-color:#221e11;
+    color: white;
+    display: block;
+    padding: 5px 0px 0px 20px;
+    text-align: justify;
+    position: relative;
+    bottom: 49px;
+    opacity: .7;
+    font-family: roboto medium;
+    font-size: 20px;
+    font-weight: bolder
+}
+
+.banner__subnameright{
+ 
+    width: 21px;
+    height: 21px;
+    background-color: red;
+    display: block;
+    float: right;
+    margin-right: 45px;
+    margin-top: 5px;
+    border-radius: 9px;
+
+}
+.banner__nameright--round{
+     width: 10px;
+    height: 10px;
+    background-color: white;
+    display: block;
+     margin-right: 65px;
+    margin-top: 5px;
+    margin-left:5px; 
+    border-radius:8px; 
+}
+.banner__dialup{
+    width: 254px;
+    height: 45px;
+    display: block;
+    background-color: red;
+    position: relative;
+    bottom: 49px;
+
+}
+.banner__dialup--image{
+    content: url(../../images/dialup.png);
+    height: 30px;
+    width: 30px;
+    margin-top: -15px;
+    border-radius: 70px;
+}

@@ -1,0 +1,77 @@
+.bannerbody{
+    width:100%;
+
+    margin: 0 auto;
+    background-color:#833d4e ; 
+    border-bottom:1px solid whitesmoke ;
+    text-align: justify; 
+}
+.bannerbody__firstrow{
+    height: 63px;
+ }
+ .bannerbody__secondrow{
+height: 62px;
+border-bottom:1px solid whitesmoke; 
+ }
+
+ .bannerbody__icon1{
+    content: url(../../images/baby.png) ;
+    background-color: antiquewhite;
+    margin-left: 10px;
+
+}
+
+.bannerbody__icon2{
+    content: url(../../images/birth.png) ;
+    background-color: antiquewhite;
+    margin-left: 10px;
+
+}
+
+.bannerbody__icon3{
+    content: url(../../images/twins.png) ;
+    background-color: antiquewhite;
+    margin-left: 10px;
+}
+
+.bannerbody__icon4{
+    content: url(../../images/date.png) ;
+    background-color: antiquewhite;
+    margin-left: 10px;
+
+}
+
+.bannerbody__icon5{
+    content: url(../../images/womb.png) ;
+    background-color: antiquewhite;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+
+.bannerbody__tag{
+     font-family:roboto regular;
+    font-size:15px; 
+    margin-left: 20px; 
+    position: relative;
+    bottom: 20px;
+}
+
+.bannerbody__h4{
+    margin:6px 0px 0px  10px;
+    border-right:1px solid white;
+    display: inline-block;
+    width: 31%;
+    color: antiquewhite;
+
+}
+.bannerbody__next{
+margin-left:70px; 
+}
+#more{
+    margin-left:140px; 
+    text-transform: uppercase;
+}
+#g6{
+    bottom:35px; 
+}

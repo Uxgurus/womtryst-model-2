@@ -1,0 +1,35 @@
+.Head1{
+    width:900px;
+    height: 90px;
+     background-color:#f95151;  
+     margin:0 auto; 
+     text-align:left;  
+     
+}
+.head-child1{
+   margin:0px;
+    font-family:Roboto Medium;
+    font-size:20px;
+    color:white; 
+    padding:25px 0px 0px 30px;
+    font-weight: normal;
+}
+.head__image{
+    padding: 0px 25px 0px 0px;
+    margin-bottom: -5px; 
+}
+.head__findpatient{
+     margin:45px;  
+     font-family:Roboto Medium;
+     font-size:25px;
+     font-weight: bold;
+
+}
+.head__image:hover{
+    color:grey; 
+}
+.head__fonticon{
+    float:right;
+    margin-right:50px;
+    
+}

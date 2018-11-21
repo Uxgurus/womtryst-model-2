@@ -1,0 +1,21 @@
+.medicalcondition{
+    width:900px;
+    margin:0 auto;
+    /* border:1px solid grey;  */
+
+}
+.medicalcondition__typehere{
+    border-bottom: 1px solid grey;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 45px;
+    width: 420px;
+    margin: 0px 436px 20px 60px;
+    padding: 5px 0px 0px 30px;
+    outline: none;
+    /* text-align: left; */
+    font-size: 17px;
+    /* padding: 10px; */
+    outline: none;
+}

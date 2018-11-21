@@ -1,0 +1,42 @@
+.bannernav__ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#f95151 ;
+    
+}
+.bannernav{
+    margin-top: -5px;
+}
+
+.bannernav__li{
+    float: left;
+    margin: 0px 45px 0px 45px;
+}
+.bannernav__anchor{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 5px 15px;
+    text-decoration: none;
+    }
+    #bannnernav--anchor1{
+        content: url(../../images/healthcon.png)
+    }
+    #bannnernav--anchor2{
+        content: url(../../images/consult.png)
+    }
+    #bannnernav--anchor3{
+        content: url(../../images/scan.png)
+    }
+    #bannnernav--anchor4{
+        content: url(../../images/investigation.png)
+    }
+    #bannnernav--anchor5{
+        content: url(../../images/immutize.png)
+    }
+
+li a:hover {
+border-bottom:1px solid white; 
+}

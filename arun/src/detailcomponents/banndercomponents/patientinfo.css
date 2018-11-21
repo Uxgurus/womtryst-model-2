@@ -1,0 +1,33 @@
+.bannerpatientinfo{
+    width:100%;
+    display:block;
+    height:50px ; 
+    font-family:roboto medium;
+     
+}
+.patientinfo{
+    content: url(../../images/error.png)
+}
+.bannerpatientinfo__sub{
+    float:right;
+}
+.patientinfo{
+   
+position: relative;
+bottom: 5px;
+font-size: 20px;
+margin-right: 10px;
+}
+.patientinfo__info{
+    position: relative;
+bottom: 15px;
+font-size: 20px;
+color: antiquewhite;
+}
+.patientinfo__req{
+    position: relative;
+    bottom: 15px;
+    font-size: 20px;
+    color:green;
+    margin-right: 20px;
+}
