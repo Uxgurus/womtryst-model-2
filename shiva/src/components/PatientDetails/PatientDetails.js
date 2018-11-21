@@ -15,7 +15,6 @@ import Consultation from '../PatientDetails/PatientReports/Consultation';
 import Investigation from '../PatientDetails/PatientReports/Investigation';
 import Immunization from '../PatientDetails/PatientReports/Immunization';
 import AddPatientDetails from './AddPatientDetails/AddPatientDetails';
-
 import Popup from 'reactjs-popup'
 
 class PatientDetails extends Component {
@@ -104,7 +103,7 @@ HideAddMedicalDetails = () => {
                         EnableDeletAlt= {this.state.PatientDetailDelete[1].EnableDeletAlt}
                         ActiveDeleteSrc= {this.state.PatientDetailDelete[2].ActiveDeleteSrc}
                         ActiveDeletAlt= {this.state.PatientDetailDelete[3].ActiveDeletAlt}
-                        AddMedicalPopUp= {this.AddMedicalPopUp}></PatientDetailDelete>
+                        AddMedicalPopUp1= {this.AddMedicalPopUp}></PatientDetailDelete>
       
                         </Popup>
                        

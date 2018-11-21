@@ -1,14 +1,15 @@
 import React,{Component } from 'react';
 import '../../../assets/styles/PatientDetailsDelet.scss';
 // import $ from 'jquery';  
-import AddPatientDetails from '../AddPatientDetails/AddPatientDetails';
+// import AddPatientDetails from '../AddPatientDetails/AddPatientDetails';
 import Popup from 'reactjs-popup'
 // import PatientMedicalReport from '../../PatientDetails/PatientMedicalReports/PatientMedicalReport'
-   
+  
+
 class PatientDetaailsDelete extends Component{
-    // state= {
-    //     showPopup: false
-    // }
+    state= {
+        showPopup: false
+    }
     // AddMedicalPopUp = () =>{
     //     this.setState({ 
     //         showPopup: true
@@ -18,7 +19,7 @@ class PatientDetaailsDelete extends Component{
     //     this.setState({ 
     //         showPopup: false
     //     });
-    // }
+    // } 
     render(){
         return(
             <div>
@@ -37,12 +38,16 @@ class PatientDetaailsDelete extends Component{
                     <img src= {this.props.ActiveDeleteSrc} alt={this.props.ActiveDeletAlt}></img></a>
                     <span className= 'PatientDetailsDelet__Infertilityborder'></span>  
                   <a className= 'PatientDetailsDelet__AddNewCondition' 
-                  onClick= {this.Props.AddMedicalPopUp}
+                  onClick= {this.props.AddMedicalPopUp1}
                         title= 'Add new Condition'>Add new Condition</a>
                 </div>
                 
             </div>
-         
+               {/* {this.state.showPopup ? 
+                <AddPatientDetails HideAddMedicalDetails= {this.HideAddMedicalDetails}/>
+                
+              : null
+                     } */}
             </div>     
         )
     }
