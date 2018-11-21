@@ -1,0 +1,58 @@
+@import './variables.scss';
+.PatientListSearch{
+    background-color: $bgColor--gray; 
+    height: 500px;
+    &__UnorderList {
+        float: left; 
+        margin: 10px 0px 0px 12px;
+        width: 1258px;
+    }
+    &__ListItemas{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &__input{ 
+        background: url(../images/inputSearchImage.png) no-repeat;
+                width: 1030px;
+                height:45px ; 
+                background-color:#ffffff;   
+                border :2px solid #b7b7b7; 
+                outline: none; 
+                font-size: 16px;
+                color: #b6b6b6;
+                font-family: $fontFamily--robotoMedium;
+                background-position: 65px 10px; 
+                padding: 0px 0px 0px 115px;
+                margin-left: 12px;   
+                border : none;   
+        &::placeholder{
+            font-size: 11px;
+            font-family: $fontFamily--robotoRegular;
+            background-position: 10px 10px;
+            font-weight: bold;
+        }
+    }
+    &__SearchCancel{ 
+        width: 75px;
+        height: 45px;
+        background-color: #f95151; 
+        
+    }
+    &__SearchCancelLink{
+        background: url(../images/CancelImage.png) no-repeat;
+        display: block;
+        text-indent: -99999em;
+        width: 75px;
+        height: 45px;
+        background-position: 20px;
+    }
+    &__PopUp{
+        background-color: #ffffff;
+        width: 1000px;
+        height: 200px;
+        display: none;
+        margin: 10px 0px 0px 0px;
+        border-top: 1px outset gray;
+        border-bottom: 1px outset gray;
+    }
+}

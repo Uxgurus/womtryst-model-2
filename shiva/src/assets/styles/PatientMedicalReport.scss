@@ -1,0 +1,53 @@
+@import './variables.scss';
+.BgIcons{
+    text-indent: -99999em;
+    float: left;
+    width: 40px;
+    height: 36px;
+}
+.PatientMedicalReports{
+    
+    &__Unorder{
+        margin-top: 2px;
+        float: right;
+        width: 717px;
+        height: 50px;
+        background-color: #f95151;
+    }
+    &__ListIteam{
+        display: inline-block;  
+        padding: 7px 50px; 
+    }
+    &__ListIteam:hover, &__ListIteam:active{
+        border-bottom: 2px solid #ffffff;
+    padding: 5px 50px;  
+    }
+    &__Healthondition{
+        @extend .BgIcons;
+        background: url(../images/HealthConditionIcon.png) no-repeat;
+    }
+    &__Consultation{
+        @extend .BgIcons;
+        background: url(../images/ConsultationIcon.png) no-repeat;
+        
+    }
+    // &__Consultation:hover{
+    //     background: url(../images/ActiveconsutationIcon.png) no-repeat;
+    // }
+    &__Scans{
+        @extend .BgIcons;  
+        background: url(../images/NormalScanIcon.png) no-repeat;
+    }
+    // &__Scans:hover{
+    //     background: url(../images/ScansIcon.png) no-repeat;
+    // }
+    &__Investigation{
+        @extend .BgIcons;
+        background: url(../images/InvestigationIcon.png) no-repeat;
+        width: 20px; 
+    }
+    &__immunization{
+        @extend .BgIcons;
+        background: url(../images/ImmunizationIcon.png) no-repeat;
+    }
+    }

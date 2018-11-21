@@ -1,0 +1,13 @@
+@import './variables.scss';
+.Header{
+    background-color: $BgColor--Red;
+    width :100%; 
+    padding: 45px 0px;  
+    &__heading{ 
+        color: $color--White;
+        font-size: $fontSize--Heading;
+        font-family: $fontFamily--robotoMedium;
+        float: left;
+        margin-left: 25px;
+    } 
+}

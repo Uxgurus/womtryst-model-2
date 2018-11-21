@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto-Regular.woff),url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family:'Roboto-Medium';
+    src: url(../fonts/Roboto-Medium.ttf),url(../fonts/Roboto-Medium.woff);
+} 
+@font-face{
+    font-family: 'Roboto-italic';
+    src: url(../fonts/Roboto-Italic.ttf),url(../fonts/Roboto-Italic.woff)
+}
+$BgColor--Red: #f95151;
+$fontSize--Heading: 16px;
+$fontFamily--robotoMedium:'Roboto-Medium' ;
+$fontFamily--robotoRegular:'Roboto-Regular' ;
+$color--White:#ffffff;
+$text-align: center;
+$float--left: left;
+$margin--0PxAuto: 0px auto;
+$bgColor--gray: #f7f7f7;
+$bgColor--White: #ffffff;
+$position--Relative: relative;
+$position--Absolute: absolute;
+$fontFamily--robotoitalic: 'Roboto-italic';
+

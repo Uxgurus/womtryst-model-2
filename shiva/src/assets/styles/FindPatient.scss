@@ -1,0 +1,35 @@
+@import '../styles/variables.scss';
+.FindPatient{
+    padding: 12px 0px 15px 0px;
+    float: left;
+    &__Profile{
+        width: 65px; 
+        height: 65px;
+        border-radius: 50%;
+        background-color: $BgColor--Red;
+        margin: 0px 0px 0px 10px; 
+        float: left;
+    }
+    &__image{
+        margin: 12px 0px 0px 12px;
+    }
+    &__SearchDiv{
+        width: 30px;
+        height: 30px;
+        background-color: #6ac180;
+        border-radius: 50%;    
+        position: relative; 
+        bottom: 26px;
+        left: 40px;
+    }
+    &__SerachImage{
+        margin: 7px 0px 0px 6px;
+    }
+    &__Heading{
+        color: #727272;
+        font-family: $fontFamily--robotoRegular;
+        font-size: $fontSize--Heading+3px; 
+        margin: 25px 0px 0px 150px;
+        
+    }
+}

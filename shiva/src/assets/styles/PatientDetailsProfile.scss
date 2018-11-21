@@ -1,0 +1,55 @@
+@import './variables.scss';
+.patientDetailsProfile{
+   float: left;
+    &__ImageDiv{
+        width: 255px;
+        height: 220px;
+        margin-top: 2px;
+        background-color: #ffffff;
+    }
+    &__Image{  
+        margin: 0px 0px 0px 0px;
+        // width: 255px;
+        // height: 163px;
+    }
+    &__parentDiv{
+        position: relative;
+        left: 1px;
+    }
+    &__NameDiv{
+        position: $position--Absolute;width: 255px;
+        height: 55px;background-color: #2a2212;opacity: 0.6;bottom: 0px; right: 1px;
+    }
+    &__ProfileName{
+        color: #ffffff;font-size: 17px;font-family: "Roboto-Medium"; position: absolute;
+        left: 10px;bottom: 30px;
+    }
+    &__ProfileActive{ 
+        width: 20px;height: 20px;background-color: #ff0000;border-radius: 50px;
+        position: absolute;bottom: 28px;right: 10px;
+    }
+    &__White{
+        position: absolute;width: 10px;height: 10px;border-radius: 50px; bottom: 33px;right: 15px;background-color: #ffffff;
+    }
+    &__CallerDiv{
+        width: 255px;height: 50px;background-color: $BgColor--Red;position: relative;
+        left: 0px;
+        bottom:2px;    
+    }
+    &__callerImgDiv{
+        position: absolute;
+        background-color: #ffffff;
+        border-radius: 50px;
+        left: 90px;
+        bottom: 15px;
+    }
+    &__callerLink{
+        background: url(../images/callIcon.png) no-repeat;
+        text-indent: -99999em;  
+        float: left;
+        width: 50px;
+        height: 50px;
+        background-position: 11px;
+
+    }
+}

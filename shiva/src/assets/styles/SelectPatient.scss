@@ -1,0 +1,12 @@
+@import '../styles/variables.scss';
+.selectPatient{
+    width: 1000px; 
+    background-color: #ffffff;
+    border: 10px solid #e5e5e5; 
+    margin: 20px 0px 0px 115px;
+    padding: 0px 0px 110px 0px;
+    &__Border{
+     border: 1px solid #e5e5e5;
+     margin-top: 90px;
+    }
+}

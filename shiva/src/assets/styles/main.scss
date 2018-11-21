@@ -1,0 +1,11 @@
+ @import  '../styles/variables.scss';
+ .Main__div{ 
+    background-color: $bgColor--gray; 
+    height: 600px;
+ }
+ .Header__ArrowLink{
+    background: url(../images/backIocn.png) no-repeat ;
+    text-indent: -99999em; 
+    float: left;
+    margin: 0px 0px 0px 95px;
+ }

@@ -1,0 +1,101 @@
+@import './variables.scss';
+.ParentDiv__Propertes{
+    width: 100%;
+    position: relative;
+}
+.AddMedicalDetails__backGround{
+    width: 100%;
+    height: 605px;
+    background: #4c4c4c; 
+    opacity: 0.5; 
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+}
+.Link--Properties{
+        color: #848484;
+        text-decoration: none;
+        font-size: 19px;
+        font-family: $fontFamily--robotoMedium; 
+        left: 80px;
+        position: absolute;
+}
+.border--properties{
+    border: 0.5px solid #848484;
+    position: relative; 
+    width: 775px;
+    margin: 0px auto;
+}
+.AddMedicalDetails{  
+    width: 840px;
+    background-color: #ffffff;
+    height: 560px;
+    position: absolute;  
+    top: 35px;
+    left: 235px; 
+    &__Header{
+        height: 110px;
+        width: 840px;
+        background-color: #f95151;
+    }
+    &__Heading{
+        position: absolute;
+        left: 80px;
+        top: 40px;
+        color: #ffffff;
+        font-size: 19px;
+        font-family: $fontFamily--robotoMedium;
+    }
+    &__MedicalCoditionIcon{
+        background: url(../images/AddnewMedicalConditionIcon.png) no-repeat;
+        text-indent: -99999em;
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 60px;
+        width: 30px;
+        height: 25px;   
+    } 
+    &__Pregnancy{
+        @extend .Link--Properties;
+        top: 155px; 
+    }
+    &__Pregnancyborder{
+        @extend .border--properties; 
+        top: 120px; 
+    }
+    &__infertility{
+        @extend .Link--Properties;
+        top: 275px; 
+    }
+    &__Infertilityborder{
+        @extend .border--properties;
+        top: 235px; 
+    }
+    &__Others{ 
+        @extend .Link--Properties;
+        top: 400px; 
+    }
+    &__TextBox{
+        width: 485px;
+        border: none;
+        border-bottom: 1px solid #848484;
+        position: absolute;
+        top: 490px;
+        left: 80px;
+        padding: 0px 0px 15px 15px;
+        outline: none;
+        font-size: 16px;
+        color: #b6b6b6;
+        font-family: $fontFamily--robotoMedium;
+    }
+    &__TextBox::placeholder{
+        font-size: 20px;   
+        outline: none;
+        font-size: 16px;
+        color: #848484;
+        font-family: $fontFamily--robotoRegular;
+    }
+}
+ 

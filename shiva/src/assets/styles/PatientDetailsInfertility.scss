@@ -1,0 +1,113 @@
+@import './variables.scss';
+@import './PatientDetails.scss';
+  
+.PatientDetailsInfertility__greaterThan{
+    position: absolute;
+    right: 20px; 
+    font-size: 17px;
+    bottom: 7px;
+}   
+.PatientDetailsInfertility{
+    @extend .PatientDetails;      
+    &__Content{
+        @extend .PatientDetails__Content;}
+    &__MedicalInformatioNDiv{height: 115px;}
+    &__MoreInformation{
+        position: relative;width: 80px;height: 20px;font-size: 13px;color: #ffffff;font-family: $fontFamily--robotoRegular;text-transform: uppercase;text-decoration: none;
+        float: right;
+        bottom: 27px;
+        right: 30px;
+    }
+    &__UnOrderList{float: left;margin-left: 50px;
+    width: 682px;}
+    &__ListItems{
+          display: inline-block; 
+        //   float: left;
+          width: 30%;
+          border-right: 1px solid #8d4f5e;
+    }
+    .margin--left{
+        margin-left: 25px;
+    }
+    .margin--top{
+        margin: 25px 0px 0px 26px;
+    }
+    .backGroundImages0{   
+        text-indent: -99999em;float:left;}
+    &__IVF{
+        @extend .backGroundImages0;
+        background: url(../images/IVFIcon.png) no-repeat;width: 37px;height: 27px;}
+    &__IVFLabel{
+        @extend .Label__properties; margin: 5px 0px 0px 10px;
+        }
+    &__Treatment{ 
+        color: #eea8ab; 
+        @extend .Label__properties; margin: 5px 0px 0px 10px;
+    }  
+    &__InfertilityType{
+        @extend .backGroundImages;
+        background: url(../images/InfertilityTypeIcon.png) no-repeat;width: 37px;height: 27px;
+    }
+    &__InfertilityLabel{
+        @extend .Label__properties;margin: 5px 0px 0px 10px;
+    }
+    &__PatientInfertilityDiv0{
+        margin-top: 35px;
+    }
+    &__InfertilitypeLabel{
+        @extend .Label__properties;color: #eea8ab; margin: 5px 0px 0px 10px;
+    }
+    &__DOB{
+        @extend .backGroundImages;
+        background: url(../images/DOBIcon.png) no-repeat;width: 30px;height: 27px;
+    }
+    &__DOBLabel{
+        @extend .Label__properties;margin: 5px 0px 0px 10px;
+    }
+    &__lblDOB{ 
+        @extend .Label__properties;color: #eea8ab;margin: 5px 0px 0px 10px;
+    }
+    &__MarriedLife{
+        @extend .backGroundImages;
+        background: url(../images/MarriedLifeIcon.png) no-repeat;width: 30px;height: 36px;
+    }
+    &__MarriedLifeLabel{
+        @extend .Label__properties; margin: 5px 0px 0px 10px;
+    }
+    &__lblMarriedLife{ 
+        @extend .Label__properties;color: #eea8ab;margin: 5px 0px 0px 10px;
+    }
+    .float--left{
+        float: left;
+    }
+    &__LifeCycle{
+        @extend .backGroundImages;
+        background: url(../images/CycleLengthIcon.png) no-repeat;width: 35px;height: 36px;
+        
+    }
+    &__BleedingLabel{
+        @extend .Label__properties; margin: 5px 0px 0px 10px;
+    }
+    &__ItalicText{
+        font-size: 8px;
+        font-family: $fontFamily--robotoitalic;
+        margin-left: 3px;
+    }
+    &__Bleeding{
+        @extend .Label__properties;color: #eea8ab;  margin: 5px 0px 0px 10px;
+    }
+    &__LabelBorder{   
+        border: 0.5px solid #b76570;   
+        width: 125px;
+        margin: 5px 0px 0px 45px;
+    }
+    &__CycleLengthLabel{
+        @extend .Label__properties; margin: 5px 0px 0px 10px;
+    }
+    &__CycleLengt{
+        @extend .Label__properties;color: #eea8ab;margin: 5px 0px 0px 10px;
+    }
+}
+.border--none{
+    border-right: none;
+}

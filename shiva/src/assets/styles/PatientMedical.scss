@@ -1,0 +1,26 @@
+@import './variables.scss';
+.Pregnancy{ 
+    width: 717px;height: 217px; background: url(../images/PatientMeadicalBGImage.png) no-repeat;margin-top: 2px;
+    float: right;
+    &__Headingdiv{
+        width:717px;background-color: #934653;border-bottom: 0.5px outset #d5d4d4;}
+    &__Heading{
+        color: #d9d9d9;padding: 14px 0px;
+        margin-left: 50px;
+        font-size: 16px;font-family: $fontFamily--robotoRegular;
+    }
+}
+.PatientInformationForm{ 
+    border-top: 0.5px outset #d5d4d4;height: 60px;vertical-align: middle;
+    &__UnorderList{
+        float: right;margin: 6px 20px 0px 0px;}
+    &__ListItems{
+        display: inline-block;vertical-align: middle;padding: 2px;}
+    &__Icon{
+        background: url(../images/PatientInformIcon.png) no-repeat;text-indent: -99999em;display: block;width: 20px;height: 25px;
+    }
+    &__ListItems{
+        font-size: 13px;color: #ffffff;font-family: $fontFamily--robotoRegular;}
+    &__PatientRequest{
+        font-size: 12px;color: #45f272;text-decoration: none;font-family: $fontFamily--robotoitalic;}
+}

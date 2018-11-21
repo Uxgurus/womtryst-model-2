@@ -1,0 +1,95 @@
+ @import './variables.scss';
+ .PatientDetails{   
+    background-color: #d5d4d4;width: 100%;margin: 0px auto;
+    &__Content{margin-left: 135px;width: 975px;}
+ }
+ .Header__HambergerLink{
+    background: url(../images/Hamberger.png) no-repeat ; 
+    text-indent: -99999em; 
+    float: left;
+    margin: 0px 0px 0px 95px;
+    width: 20px;
+} 
+.Header__Profile{
+    background: url(../images/ProfileCancel.png) no-repeat; 
+    text-indent: -99999em; 
+    float: right;
+    margin: 0px 50px 0px 0px;
+    width: 30px;
+    height: 30px;
+} 
+.backGroundImages{   
+    text-indent: -99999em;float: left;}
+.Label__properties{
+    font-size: 11px;color: white;font-family: $fontFamily--robotoRegular;
+    float: left;margin: 10px 0px 0px 10px;
+}
+.Pregnancy__UnOrderList1{
+    margin-top: 20px;
+}   
+.Pregnancy{ 
+    &__MedicalInformatioNDiv{height: 110px;}
+    &__MoreInformation{
+        position: relative;background: url(../images/MorePatientImg.png) no-repeat;
+        text-indent: -99999em;display: block;height: 20px;left: 670px;bottom: 35px;width: 20px;
+    } 
+    &__ListItems{
+        display: inline-block;width: 31%;border-right: 1px solid #8d4f5e;}
+    &__PatientPregnancyDiv{
+        margin: 0px 0px 0px 50px;}
+    &__PatientPregnancyDays{
+        @extend .backGroundImages;
+        background: url(../images//Pergnacy.png) no-repeat;width: 40px;height: 35px;}
+    &__PregnancyDaysCount{
+        @extend .Label__properties;
+        font-size: 15px;   
+    }
+    &__PatientJoiningDate{
+        @extend .backGroundImages;background: url(../images/DateOfJoining.png) no-repeat;width: 25px;height: 35px;   
+    }
+    &__PatientJoiningDateLabel{
+        @extend .Label__properties;
+        font-size: 13px; 
+
+    }
+    &__PatientTwins{
+        @extend .backGroundImages;
+        background: url(../images/TwinsIcon.png) no-repeat;width: 35px;height: 35px;}
+    &__PregnancyTwinsLabel{
+        @extend .Label__properties;
+        font-size: 13px; 
+    }
+    &__DateTimePicker{
+        @extend .backGroundImages;
+        background: url(../images/DatePicker.png) no-repeat;width: 37px;height: 37px;}
+    &__DateTimePickerTabel{
+        @extend .Label__properties;
+        font-size: 11px; 
+        margin-top: 5px; 
+    }
+    &__NextAppointmentLabel{
+        @extend .Label__properties;
+        font-size: 11px; 
+    }
+    &__PatientMedicalReport{
+        @extend .backGroundImages;
+        background: url(../images/PatientJoining.png) no-repeat;width: 20px;height: 40px;}
+    &__PatientMedicalReportLabel{
+        @extend .Label__properties;
+        font-size: 13px; 
+    }
+    &__PatientMedicalReportLabel sub{
+        font-size: 13px; 
+        position: relative;
+        top: 5px; 
+    }
+    &__More{
+        @extend .Label__properties;
+        font-size: 12px;text-transform: uppercase;
+        text-decoration: none;right: 20px;font-weight: normal;  
+        float: right;
+    }
+}
+.border--none{
+    border-right: none;
+}

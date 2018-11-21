@@ -1,0 +1,28 @@
+@import './variables.scss';
+.Search{
+      margin-top: 30px;   
+      &__input{
+                background: url(../images/inputSearchImage.png) no-repeat;
+                width: 900px;
+                height:45px ; 
+                background-color:#fbfbfb; 
+                border-radius: 10px;
+                border :2px solid #b7b7b7; 
+                outline: none; 
+                font-size: 16px;
+                color: #b6b6b6;
+                font-family: $fontFamily--robotoMedium;
+                background-position: 10px 10px; 
+                padding: 0px 0px 0px 55px;
+                margin-left: 12px;
+            }
+            &__input::placeholder{
+                font-size: 13px;  
+                font-family: $fontFamily--robotoRegular;
+                background-position: 10px 10px;
+                color: #b6b6b6;  
+            }
+            
+        
+        }
+         

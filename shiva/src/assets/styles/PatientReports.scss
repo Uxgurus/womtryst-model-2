@@ -1,0 +1,110 @@
+@import './variables.scss';
+    .Scans{
+    width: 974px;  
+    margin-left: 136px; 
+    overflow: hidden;
+    display: none;
+    &__Reports{
+        margin: 10px 0px 10px 0px;
+        overflow: hidden;
+    }
+    &__DateAndMonth{  
+        float: left; 
+        text-align: center;
+        width: 100px;
+        margin-top: 35px;
+    }
+    &__Content{
+        width: 974px;
+        overflow: hidden; 
+        background-color: #f8f8f8; 
+    }
+    &__Month{ 
+        color: #ff90a0;
+        font-size: 23px;
+        font-family: $fontFamily--robotoMedium;
+        font-weight: bold;
+        margin-left: 10px;
+
+    }
+    &__Month:hover{
+        color: #f95151;
+    }
+    &__Date:hover{color: #f95151;}
+    &__Date{
+        color: #ff90a0;
+        font-size: 23px;
+        font-family: $fontFamily--robotoMedium;
+        font-weight: bold;   
+    } 
+    &__ReportName{
+    float: right;
+    width: 850px;
+    background-color: #ffffff;
+    height: 100px;
+    margin: 0px 15px 0px 0px;
+    box-shadow: 0px 3px 9px 2px #d4d4d4;
+    }
+    &__DatingScan{
+        font-size: 23px;
+        margin: 45px 0px 0px 90px;
+        color: #979797;
+    }
+    &__DatingScan:hover{
+        color:#616161;
+    }
+    &__MedicalReportName{
+        font-size: 15px;
+        margin: 10px 0px 0px 90px;
+        color: #c4c4c4;
+    }
+}
+    .HealthCondition{
+        width: 974px;  
+    margin-left: 136px; 
+    overflow: hidden; 
+    }
+    .Consultation{
+        @extend .Scans;
+    }
+    .Investigation{
+        @extend .Scans; 
+        display: none;
+    }
+    .Immunization{
+        @extend .Scans; 
+        display: none;
+    }
+.ReportHeader{ 
+    background-color: #10d7c2;  
+    padding: 22.5px 35px;
+    margin-top: 10px;
+    &__Heading{
+        color: #ffffff;
+        font-family: $fontFamily--robotoMedium;
+        font-size: 17px;  
+    }
+}
+.EmptyContent{
+    width: 974px;
+    height: 250px;
+    background-color: #f5f5f5;
+    overflow: hidden;
+    margin-left: 136px;
+    text-align: center;
+    margin: 10px 0px 0px 0px;
+    &__EmptyPatientHeading{
+        font-size: 20px;
+        color: #6e6e6e;
+        font-weight: bold;
+        font-family: $fontFamily--robotoMedium;
+        padding: 50px 0px 25px 0px;
+    } 
+    &__EmptyPatientConditionInformation{
+        color: #858585;
+        font-weight: normal;
+        font-size: 20px;
+        font-family: $fontFamily--robotoRegular;
+        padding: 25px 0px 25px 0px;
+    }
+}
