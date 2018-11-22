@@ -12,6 +12,4 @@ import Main from './components/main';
 ReactDOM.render( <Main  />, document.getElementById('root'));
 
 serviceWorker.unregister();
-//shiva
-//bro
-//reedy
+ 
