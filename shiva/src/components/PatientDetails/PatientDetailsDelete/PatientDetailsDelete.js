@@ -19,7 +19,7 @@ class PatientDetaailsDelete extends Component{
                     <a className= 'PatientDetailsDelet__ActiveDeletLink' href= '#ActiveDelet' >
                     <img src= {this.props.ActiveDeleteSrc} alt={this.props.ActiveDeletAlt}></img></a>
                     <span className= 'PatientDetailsDelet__Infertilityborder'></span>  
-                  <a className= 'PatientDetailsDelet__AddNewCondition' 
+                  <a className= 'PatientDetailsDelet__AddNewCondition' href= '#dddd'
                   onClick= {this.props.AddMedicalPopUp1}
                         title= 'Add new Condition'>Add new Condition</a>
                 </div>     

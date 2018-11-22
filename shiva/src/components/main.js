@@ -18,14 +18,11 @@ class Main extends Component{
         return(
             <div className = 'Main__div'>
                 <Header 
-                    headerHeading ={this.state.header[3].headerHeading}
-                 >
-                     <a className= 'Header__ArrowLink'  href = {this.state.header[0].Href} 
-                 title = {this.state.header[1].ArrowTitle} >{this.state.header[2].backArrow}</a>
+                    headerHeading ={this.state.header[3].headerHeading}>
+                    <a className= 'Header__ArrowLink'  href = {this.state.header[0].Href} 
+                    title = {this.state.header[1].ArrowTitle} >{this.state.header[2].backArrow}</a>
                  </Header>
-                 
-                 <SelectPatient />
-                  
+                 <SelectPatient /> 
             </div>
         );
     }

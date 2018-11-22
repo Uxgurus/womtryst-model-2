@@ -2,8 +2,7 @@
     .Scans{
     width: 974px;  
     margin-left: 136px; 
-    overflow: hidden;
-    display: none;
+    overflow: hidden; 
     &__Reports{
         margin: 10px 0px 10px 0px;
         overflow: hidden;
@@ -66,17 +65,16 @@
         @extend .Scans;
     }
     .Investigation{
-        @extend .Scans; 
-        display: none;
+        @extend .Scans;  
     }
     .Immunization{
         @extend .Scans; 
-        display: none;
     }
 .ReportHeader{ 
     background-color: #10d7c2;  
     padding: 22.5px 35px;
     margin-top: 10px;
+    width: 905px;
     &__Heading{
         color: #ffffff;
         font-family: $fontFamily--robotoMedium;

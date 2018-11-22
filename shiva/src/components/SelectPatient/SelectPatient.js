@@ -4,8 +4,7 @@ import FindPatient from './FindPatient';
 import FindPatientImage from '../../assets/images/FindPatientProfile.png';
 import FindSearchImage from '../../assets/images/FindPatientSearch.png'; 
 import Search from './Search'; 
-import TotalPatient from './TotalPatient';
-import $ from 'jquery';
+import TotalPatient from './TotalPatient'; 
 import PatientImages from '../../assets/images/PatientImage.png';
 
 class SelectPatient extends Component{
@@ -22,18 +21,25 @@ class SelectPatient extends Component{
         {PatientImagealt: 'Patient Image'},
         {PatientName: 'Priya Rama Chandran'},
         {PatientPhoneNumber: '9848482952'}
-    ]
+    ],
+    PatientList: false
      
 }
-PatientListDispaly(){ 
-        $('#TotalPatients').show();
+PatientListDispaly = () =>{ 
+         this.setState({
+            PatientList: true
+         });
 }
-PatientListDispalyNone(){
-    if($("#txtFindSearch").val() === ''){
-        $('#TotalPatients').hide();
+PatientListDispalyNone = () => {
+    if(document.getElementById("txtFindSearch").value === ''){
+        this.setState({
+            PatientList: false
+         });
    }
    else{
-       $('#DisplayPatientList').show();
+    this.setState({
+        PatientList: true
+     });
    } 
 
 }
@@ -56,12 +62,12 @@ render(){
             />
              
         </div>
+        {this.state.PatientList ?
         <TotalPatient PatientImg= {this.state.TotalPatient[0].PatientImg}
          PatientImagealt= {this.state.TotalPatient[1].PatientImagealt}
          PatientName= {this.state.TotalPatient[2].PatientName}
          PatientPhoneNumber= {this.state.TotalPatient[3].PatientPhoneNumber}>
-
-        </TotalPatient>
+        </TotalPatient> : null }
         </div>
         )
 

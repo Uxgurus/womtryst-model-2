@@ -49,22 +49,50 @@ class PatientDetails extends Component {
         {ActiveDeletAlt: 'Delete Image'}
     ], 
     AddshowPopup: false,
-    DeletshowPopup: true
+    DeletshowPopup: true,
+    HealthConditionShowPopup: false,
+    ScanShowPopup:false,
+    ConsultationShowPopup: false,
+    InvestigationShowPopup: false,
+    ImmunizationShowPopup: false
   }
   AddMedicalPopUp = () =>{
-    this.setState({ 
-        AddshowPopup: true,
-        DeletshowPopup: false
-    });
+    this.setState({AddshowPopup: true,DeletshowPopup: false});
 }   
 HideAddMedicalDetails = () => {
-        this.setState({ 
-            AddshowPopup: false,
-            DeletshowPopup: true
-        });
+        this.setState({AddshowPopup: false,DeletshowPopup: true});
 } 
-    
- 
+HealthConditionEnter = () => {  
+    this.setState({HealthConditionShowPopup: true})
+}
+HealthConditionLeavu = () => {  
+    this.setState({HealthConditionShowPopup: false})
+}
+ScanEnter = () => {
+    this.setState({ScanShowPopup: true})
+}
+ScanDivLeavu = () => {
+    this.setState({ScanShowPopup: false})
+}
+ConsultationEnter = () => {
+    this.setState({ConsultationShowPopup: true})
+}
+ConsultationLeavu = () =>{ 
+    this.setState({ConsultationShowPopup: false})
+}
+InvestigationEnter = () => { 
+    this.setState({InvestigationShowPopup: true})
+}
+InvestigationLeavu = () =>{ 
+    this.setState({InvestigationShowPopup: false})
+}
+ImmunizationEnter = () => {  
+    this.setState({ImmunizationShowPopup: true})
+}
+ImmunizationLeavu = () =>{ 
+    this.setState({ImmunizationShowPopup: false})
+
+}
   render() {
     return (
       <div className="PatientDetails" onClick= {this.HidePopup}>
@@ -173,18 +201,28 @@ HideAddMedicalDetails = () => {
                                 </ul> 
                         </div>
                     </PatientMedical>
-                    <PatientMedicalReport HealthConditionEnter= {this.HealthConditionEnter} />
+                    <PatientMedicalReport HealthConditionEnter= {this.HealthConditionEnter}
+                     HealthConditionLeavu= {this.HealthConditionLeavu}
+                     ScanEnter= {this.ScanEnter}
+                     ScanDivLeavu= {this.ScanDivLeavu}
+                     ConsultationEnter= {this.ConsultationEnter}
+                     ConsultationLeavu= {this.ConsultationLeavu}
+                     InvestigationEnter= {this.InvestigationEnter}
+                     InvestigationLeavu= {this.InvestigationLeavu}
+                     ImmunizationEnter= {this.ImmunizationEnter}
+                     ImmunizationLeavu= {this.ImmunizationLeavu}
+                                          />
                     {this.state.AddshowPopup ? 
                 <AddPatientDetails HideAddMedicalDetails= {this.HideAddMedicalDetails}/>
                 
               : null
                      }
               </div> 
-              <HealthCondition /> 
-              <Scans /> 
-                <Consultation ></Consultation>
-                <Investigation ></Investigation>
-                <Immunization /> 
+              {this.state.HealthConditionShowPopup ? <HealthCondition /> : null}
+              {this.state.ScanShowPopup ? <Scans /> : null}
+              {this.state.ConsultationShowPopup ? <Consultation /> : null}
+              {this.state.InvestigationShowPopup ? <Investigation /> : null}
+              {this.state.ImmunizationShowPopup ? <Immunization /> : null}
         </div>
     );
   }

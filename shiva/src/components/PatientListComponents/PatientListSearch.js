@@ -1,6 +1,5 @@
 import React,{Component } from 'react';
-import '../../assets/styles/PatientListSearch.scss';
-import $ from 'jquery';
+import '../../assets/styles/PatientListSearch.scss'; 
 import TotalPatientsList from './TotalPatientList';
 import PatientImages from '../../assets/images/PatientImage.png';
 
@@ -13,15 +12,9 @@ class PatientListSearch extends Component{
             {PatientName: 'Priya Rama Chandran'},
             {PatientPhoneNumber: '9848482952'}
         ]
-    }
-    // PpUp = () => { 
-    //         $('#TotalPatientList').show(); 
-    // }
-    // PopUpCancel() { 
-    //     $("#txtPatientListSearch").val() === '';     
-    // }
+    } 
     Cancel = () => {
-         $("#txtPatientListSearch").val('');  
+         document.getElementById("txtPatientListSearch").value = '';
     }
     render(){
         return(
