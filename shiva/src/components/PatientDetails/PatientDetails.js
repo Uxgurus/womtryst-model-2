@@ -63,41 +63,101 @@ HideAddMedicalDetails = () => {
         this.setState({AddshowPopup: false,DeletshowPopup: true});
 } 
 HealthConditionEnter = () => {  
-    this.setState({HealthConditionShowPopup: true})
+    this.setState({
+        HealthConditionShowPopup: true,
+        ScanShowPopup:false,
+        ConsultationShowPopup: false,
+        InvestigationShowPopup: false,
+        ImmunizationShowPopup: false
+    })
 }
-HealthConditionLeavu = () => {  
-    this.setState({HealthConditionShowPopup: false})
-}
+// HealthConditionLeavu = () => {  
+//     this.setState({
+//         HealthConditionShowPopup: true,
+//         ScanShowPopup:false,
+//         ConsultationShowPopup: false,
+//         InvestigationShowPopup: false,
+//         ImmunizationShowPopup: false
+//     })
+// }
 ScanEnter = () => {
-    this.setState({ScanShowPopup: true})
+    this.setState({
+        HealthConditionShowPopup: false,
+        ScanShowPopup:true,
+        ConsultationShowPopup: false,
+        InvestigationShowPopup: false,
+        ImmunizationShowPopup: false
+    })
 }
-ScanDivLeavu = () => {
-    this.setState({ScanShowPopup: false})
-}
+// ScanDivLeavu = () => {
+//     this.setState({
+//         HealthConditionShowPopup: false,
+//         ScanShowPopup:true,
+//         ConsultationShowPopup: false,
+//         InvestigationShowPopup: false,
+//         ImmunizationShowPopup: false
+//     })
+// }
 ConsultationEnter = () => {
-    this.setState({ConsultationShowPopup: true})
+    this.setState({
+        HealthConditionShowPopup: false,
+        ScanShowPopup:false,
+        ConsultationShowPopup: true,
+        InvestigationShowPopup: false,
+        ImmunizationShowPopup: false
+    })
 }
-ConsultationLeavu = () =>{ 
-    this.setState({ConsultationShowPopup: false})
-}
+// ConsultationLeavu = () =>{ 
+//     this.setState({
+//         HealthConditionShowPopup: false,
+//         ScanShowPopup:false,
+//         ConsultationShowPopup: true,
+//         InvestigationShowPopup: false,
+//         ImmunizationShowPopup: false
+//     })
+// }
 InvestigationEnter = () => { 
-    this.setState({InvestigationShowPopup: true})
+    this.setState({
+        HealthConditionShowPopup: false,
+        ScanShowPopup:false,
+        ConsultationShowPopup: false,
+        InvestigationShowPopup: true,
+        ImmunizationShowPopup: false
+    })
 }
-InvestigationLeavu = () =>{ 
-    this.setState({InvestigationShowPopup: false})
-}
+// InvestigationLeavu = () =>{ 
+//     this.setState({
+//         HealthConditionShowPopup: false,
+//         ScanShowPopup:false,
+//         ConsultationShowPopup: false,
+//         InvestigationShowPopup: true,
+//         ImmunizationShowPopup: false
+//     })
+// }
 ImmunizationEnter = () => {  
-    this.setState({ImmunizationShowPopup: true})
+    this.setState({
+        HealthConditionShowPopup: false,
+        ScanShowPopup:false,
+        ConsultationShowPopup: false,
+        InvestigationShowPopup:false,
+        ImmunizationShowPopup: true
+    })
 }
-ImmunizationLeavu = () =>{ 
-    this.setState({ImmunizationShowPopup: false})
+// ImmunizationLeavu = () =>{ 
+//     this.setState({
+//         HealthConditionShowPopup: false,
+//         ScanShowPopup:false,
+//         ConsultationShowPopup: false,
+//         InvestigationShowPopup:false,
+//         ImmunizationShowPopup: true
+//     })
 
-}
+// }
   render() {
     return (
       <div className="PatientDetails" onClick= {this.HidePopup}>
             <Header headerHeading= {this.state.Header[0].PatientDetails} >
-                <a className= 'Header__HambergerLink' href = {this.state.Header[4].Hambergerhref} title = {this.state.Header[5].HambergerTitle} >{this.state.Header[6].Hamberger}</a>
+                <a className= 'Header__HambergerLink1' href = {this.state.Header[4].Hambergerhref} title = {this.state.Header[5].HambergerTitle} >{this.state.Header[6].Hamberger}</a>
                 <a className= 'Header__Profile' href= {this.state.Header[1].ProfileHref} 
                 title= {this.state.Header[2].ProfileTitle} >{this.state.Header[3].Profile}
                 </a>

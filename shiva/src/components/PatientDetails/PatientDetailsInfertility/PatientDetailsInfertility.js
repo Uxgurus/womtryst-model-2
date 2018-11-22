@@ -36,13 +36,109 @@ class PatientDetailsInfertility extends Component{
         Heading: 'Infertility',
         MedicalRequest: '- Request',
         More: '2 More',
-        greaterThan: '>'
+        greaterThan: '>',
+        HealthConditionShowPopup: false,
+        ScanShowPopup:false,
+        ConsultationShowPopup: false,
+        InvestigationShowPopup: false,
+        ImmunizationShowPopup: false
       }     
+      HealthConditionEnter = () => {  
+        this.setState({
+            HealthConditionShowPopup: true,
+            ScanShowPopup:false,
+            ConsultationShowPopup: false,
+            InvestigationShowPopup: false,
+            ImmunizationShowPopup: false
+        })
+    }
+    HealthConditionLeavu = () => {  
+        this.setState({
+            HealthConditionShowPopup: true,
+            ScanShowPopup:false,
+            ConsultationShowPopup: false,
+            InvestigationShowPopup: false,
+            ImmunizationShowPopup: false
+        })
+    }
+    ScanEnter = () => {
+        this.setState({
+            HealthConditionShowPopup: false,
+            ScanShowPopup:true,
+            ConsultationShowPopup: false,
+            InvestigationShowPopup: false,
+            ImmunizationShowPopup: false
+        })
+    }
+    ScanDivLeavu = () => {
+        this.setState({
+            HealthConditionShowPopup: false,
+            ScanShowPopup:true,
+            ConsultationShowPopup: false,
+            InvestigationShowPopup: false,
+            ImmunizationShowPopup: false
+        })
+    }
+    ConsultationEnter = () => {
+        this.setState({
+            HealthConditionShowPopup: false,
+            ScanShowPopup:false,
+            ConsultationShowPopup: true,
+            InvestigationShowPopup: false,
+            ImmunizationShowPopup: false
+        })
+    }
+    ConsultationLeavu = () =>{ 
+        this.setState({
+            HealthConditionShowPopup: false,
+            ScanShowPopup:false,
+            ConsultationShowPopup: true,
+            InvestigationShowPopup: false,
+            ImmunizationShowPopup: false
+        })
+    }
+    InvestigationEnter = () => { 
+        this.setState({
+            HealthConditionShowPopup: false,
+            ScanShowPopup:false,
+            ConsultationShowPopup: false,
+            InvestigationShowPopup: true,
+            ImmunizationShowPopup: false
+        })
+    }
+    InvestigationLeavu = () =>{ 
+        this.setState({
+            HealthConditionShowPopup: false,
+            ScanShowPopup:false,
+            ConsultationShowPopup: false,
+            InvestigationShowPopup: true,
+            ImmunizationShowPopup: false
+        })
+    }
+    ImmunizationEnter = () => {  
+        this.setState({
+            HealthConditionShowPopup: false,
+            ScanShowPopup:false,
+            ConsultationShowPopup: false,
+            InvestigationShowPopup:false,
+            ImmunizationShowPopup: true
+        })
+    }
+    ImmunizationLeavu = () =>{ 
+        this.setState({
+            HealthConditionShowPopup: false,
+            ScanShowPopup:false,
+            ConsultationShowPopup: false,
+            InvestigationShowPopup:false,
+            ImmunizationShowPopup: true
+        })
+    
+    }
     render(){
         return(
                 <div className= 'PatientDetailsInfertility'>
                     <Header headerHeading= {this.state.Header[0].PatientDetails} >
-                        <a className= 'Header__HambergerLink' href = {this.state.Header[4].Hambergerhref} title = {this.state.Header[5].HambergerTitle} >{this.state.Header[6].Hamberger}</a>
+                        <a className= 'Header__HambergerLink0' href = {this.state.Header[4].Hambergerhref} title = {this.state.Header[5].HambergerTitle} >{this.state.Header[6].Hamberger}</a>
                         <a className= 'Header__Profile' href= {this.state.Header[1].ProfileHref} title= {this.state.Header[2].ProfileTitle} >{this.state.Header[3].Profile}
                         </a>
                     </Header>
@@ -113,13 +209,23 @@ class PatientDetailsInfertility extends Component{
                                 </ul>
                             </div>   
                     </PatientMedicalInfertility>
-                    <PatientMedicalReport />
+                    <PatientMedicalReport HealthConditionEnter= {this.HealthConditionEnter}
+                        HealthConditionLeavu= {this.HealthConditionLeavu}
+                     ScanEnter= {this.ScanEnter}
+                     ScanDivLeavu= {this.ScanDivLeavu}
+                     ConsultationEnter= {this.ConsultationEnter}
+                     ConsultationLeavu= {this.ConsultationLeavu}
+                     InvestigationEnter= {this.InvestigationEnter}
+                     InvestigationLeavu= {this.InvestigationLeavu}
+                     ImmunizationEnter= {this.ImmunizationEnter}
+                     ImmunizationLeavu= {this.ImmunizationLeavu}
+                    />
                    </div>
-                    <Scans></Scans>
-                    <HealthCondition></HealthCondition>
-                    <Consultation ></Consultation>
-                    <Investigation ></Investigation>
-                    <Immunization />   
+                    {this.state.HealthConditionShowPopup ? <HealthCondition /> : null}
+                    {this.state.ScanShowPopup ? <Scans /> : null}
+                    {this.state.ConsultationShowPopup ? <Consultation /> : null}
+                    {this.state.InvestigationShowPopup ? <Investigation /> : null}
+                    {this.state.ImmunizationShowPopup ? <Immunization /> : null}  
                 </div>
         )
     }
