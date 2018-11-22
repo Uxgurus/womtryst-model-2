@@ -1,8 +1,8 @@
 import React,{Component } from 'react';
-import '../assets/styles/reset.scss';
-import Header from './HeaderComponents/Header';
-import SelectPatient from './SelectPatient/SelectPatient';
-import '../assets/styles/main.scss';
+import '../../assets/styles/reset.scss';
+import Header from '../HeaderComponents/Header';
+import SelectPatient from './SelectPatient';
+import '../../assets/styles/main.scss';
 
 class Main extends Component{
     state ={
