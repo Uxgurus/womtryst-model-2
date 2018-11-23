@@ -1,8 +1,12 @@
-import React,{Component } from 'react';
+import React,{Component , lazy , Suspense } from 'react';
 import '../../assets/styles/reset.scss';
 import Header from '../HeaderComponents/Header';
 import SelectPatient from './SelectPatient';
 import '../../assets/styles/main.scss';
+// const Header = lazy(() => {
+//     import ('../HeaderComponents/Header');
+//     import ('./SelectPatient');
+// });
 
 class Main extends Component{
     state ={
@@ -16,6 +20,7 @@ class Main extends Component{
     }
     render(){
         return(
+            <Suspense fallback= {<div>Searching....</div>}>
             <div className = 'Main__div'>
                 <Header 
                     headerHeading ={this.state.header[3].headerHeading}>
@@ -24,7 +29,9 @@ class Main extends Component{
                  </Header>
                  <SelectPatient /> 
             </div>
+            </Suspense>
         );
+
     }
 }
 export default Main;
